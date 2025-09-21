@@ -6,11 +6,10 @@ using namespace std;
 class Solution {
 public:
     string reverseVowels(string s) {
-        // queue<int>q;
-        // q.push(10);
-        // q.push(5);
-        // q.pop();
-        // queue<char> vowel;
+       // Two pointer approach as we go from both sides of the word pause a pointer when 
+       // we find a vowel until the other pointer finds one as well. Checking the lowercase 
+       // of each char.
+       // Swap them.
         int j = s.length() - 1;
         int i = 0;
         while (i < j) {
