@@ -4,6 +4,7 @@ public:
         // Go through array checking before and after current spot to check if 
         // there is already a plant there. If we can place we place in array.
         // Special cases of first and last dont want to index outside.
+        // Only one flowerbed and no extra flowers.
         int bedSize = flowerbed.size();
         if (n ==0) {
             return true;
