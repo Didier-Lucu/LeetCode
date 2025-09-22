@@ -1,4 +1,4 @@
-#include <limits>
+#include <climits>
 #include <iostream>
 #include <cctype>
 
@@ -12,15 +12,15 @@ public:
         // track of our last pair.
 
         int sizeNums = nums.size();
-        int i = numeric_limits<int>::max();
-        int j = numeric_limits<int>::max();
+        int i = INT_MAX; // climits
+        int j = INT_MAX;
 
         for (int h = 0; h < sizeNums; h++) {
             if (nums[h] < i) {
                 i = nums[h];
             } else if (nums[h] < j && nums[h] > i) {
                 j = nums[h];
-            }
+            } 
             if (nums[h] > j) {
                 return true;
             }
