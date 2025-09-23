@@ -6,6 +6,8 @@ using namespace std;
 class Solution {
 public:
     int compress(vector<char>& chars) {
+        // For loop through the whole array looking for a change in char when that happens 
+        // we  take current count and divide it up special cases when 1002 or 101 and 12.
         int count = 1;
         int spot = 0;
         char c = chars[0];
