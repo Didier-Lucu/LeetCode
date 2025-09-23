@@ -2,7 +2,7 @@ class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
         // Two pointers both start at 0 and 1 index i , k we increase k until we find a 
-        // non 0 int then if num at i is 0 swap the two and increment k.
+        // non 0 int or if k == i , then if num at i is 0 swap the two and increment k.
         int k = 1;
         for (int i = 0; i < nums.size(); i++) {
             if (i == k) {
