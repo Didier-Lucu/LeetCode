@@ -21,16 +21,12 @@ public:
         for (auto i = dic.begin(); i != dic.end(); i++) {
             if (i->second % 2 == 0) {
                 count += i->second;
-            } else {
-                
+            } else { 
                 odd = 1;
-            
-                count += i->second - 1;
-                
-
+                count += i->second - 1;    
             }
         }
-        count += odd;
-        return count;
+        
+        return count += odd;
     }
 };
