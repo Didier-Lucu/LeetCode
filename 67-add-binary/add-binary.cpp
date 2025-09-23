@@ -33,7 +33,6 @@ public:
         int j = b.length() - 1;
         char carryBit = '0';
         while (i >= 0 || j >= 0) {
-            // cout << i << endl << j << endl;
             string curBit = "00";
             if (i >= 0 && j >= 0) {
                 curBit = binAdd(a[i], b[j], carryBit);
