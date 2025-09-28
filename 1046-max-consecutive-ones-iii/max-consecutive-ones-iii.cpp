@@ -19,11 +19,9 @@ public:
                     zeros--;
                 } else {
                     while (zeros == 0) {
-                        cout << "BAD" << endl;
                         if (nums[left] == 0) {
                             left++;
                             break;
-                            // cout << "zeros " << zeros << endl;
                         } 
                         count--;
                         left++;
@@ -37,7 +35,6 @@ public:
             if (count > max) {
                 max = count;
             }
-            cout << "Count: " << count << endl;
             right++;
         }
         return max;
